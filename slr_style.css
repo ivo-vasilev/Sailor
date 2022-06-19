@@ -1,0 +1,12 @@
+QPushButton {
+    border: #cceeff;
+    padding: 10px;
+}
+QPushButton:hover {
+
+}
+QLineEdit {
+    border: 1px #cceeff;
+    padding: 10px;
+    font-size: 14px;
+}
