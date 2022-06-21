@@ -11,6 +11,8 @@ from PyQt5.QtGui import QIcon, QWindow, QImage, QKeySequence
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
 
+import resources_rc
+
 
 class AddressBar(QLineEdit):
     def __init__(self):
@@ -24,7 +26,7 @@ class App(QFrame):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Sailor")
-        self.setWindowIcon(QIcon('icons/surf-logo-trans.png'))
+        self.setWindowIcon(QIcon('icons/sailor-logo-trans.png'))
         self.setMinimumSize(1200, 600)
         self.CreateApp()
 
@@ -58,13 +60,13 @@ class App(QFrame):
         self.addressbar.returnPressed.connect(self.BrowseTo)
 
         # Add toolbar buttons
-        self.BackButton = QPushButton(QIcon('icons/back.png'), "")
+        self.BackButton = QPushButton(QIcon(':/icons/back.png'), "")
         self.BackButton.clicked.connect(self.GoBack)
 
-        self.ForwardButton = QPushButton(QIcon('icons/forward.png'), "")
+        self.ForwardButton = QPushButton(QIcon(':/icons/forward.png'), "")
         self.ForwardButton.clicked.connect(self.GoForward)
 
-        self.ReloadButton = QPushButton(QIcon('icons/reload.png'), "")
+        self.ReloadButton = QPushButton(QIcon(':/icons/reload.png'), "")
         self.ReloadButton.clicked.connect(self.ReloadPage)
 
         # Create the toolbar

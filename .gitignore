@@ -1,0 +1,5 @@
+.idea/
+style.css
+build/
+dist/
+*.spec
