@@ -3,8 +3,8 @@
         <file>icons/back.png</file>
         <file>icons/forward.png</file>
         <file>icons/reload.png</file>
-        <files>icons/sailor-logo-trans.png</files>
-        <files>icons/sailor-logo-yellow.ico</files>
-        <files>icons/sailor-logo-yellow.png</files>
+        <file>icons/sailor-logo-trans.png</file>
+        <file>icons/sailor-logo-yellow.ico</file>
+        <file>icons/sailor-logo-yellow.png</file>
     </qresource>
 </RCC>
